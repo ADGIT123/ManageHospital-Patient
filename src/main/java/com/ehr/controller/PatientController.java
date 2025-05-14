@@ -28,7 +28,6 @@ public class PatientController {
             if (patient != null) {
                 return ResponseEntity.ok(patient);
             } else {
-                System.out.println("In else block");
                 return ResponseEntity.notFound().build();
             }
         } catch (Exception e) {
