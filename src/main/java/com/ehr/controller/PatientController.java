@@ -22,6 +22,8 @@ public class PatientController {
             com.ehr.domain.Patient  patient = new com.ehr.domain.Patient();
             patient.setAge(patient1.getAge());
             patient1.setId(patient1.getId());
+            patient.setAge(90);
+            System.out.println(patient.getAge());
             patient1.setName(patient.getName());
             if (patient != null) {
                 return ResponseEntity.ok(patient);
