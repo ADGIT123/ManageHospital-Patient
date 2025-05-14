@@ -26,6 +26,7 @@ public class PatientController {
             System.out.println(patient.getAge());
             patient1.setName(patient.getName());
             if (patient != null) {
+                 System.out.println("In If block");
                 return ResponseEntity.ok(patient);
             } else {
                 System.out.println("In else block");
